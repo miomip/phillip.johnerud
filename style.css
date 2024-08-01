@@ -1,0 +1,261 @@
+:root {
+    background-color: black;
+    height: 200vh;
+    width: 100%;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+:root::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+#header {
+    height: 18vh;
+    width: 100%;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#header-left {
+    flex: .5;
+    display: flex;
+    align-content: center;
+    justify-content: start;
+}
+
+#header-left-c-area {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2vh;
+}
+
+#header-text {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    height: 2vh;
+}
+
+
+#header-center {
+    flex: 1;
+}
+#header-contact {
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-content: end;
+}
+
+#header-c-area {
+    display: flex;
+    height: 100%;
+    margin-right: 15%;
+}
+.header-c-link {
+    align-self: center;
+
+}
+
+#header-select {
+    display: flex;
+    flex-direction: row;
+    border-radius: 999rem;
+    border: 0;
+    margin-left: 8vh;
+    margin-top: 8vh;
+    padding: .5vh .5625vh;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.header-link {    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+    border-radius: 999rem;
+    padding-bottom: 0.3vh;
+    padding-top: 0.3vh;
+    padding-left: .7vh;
+    padding-right: .7vh;
+}
+.header-link:hover {
+    background-color: rgba(37, 37, 37, 0.4);
+}
+
+#main {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    width: inherit;
+    height: 300vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#main-image-container {
+    padding: 0;
+
+}
+#main-image {
+    background-position: center;
+    background-image: url("20240801_130943.jpg");
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-textfield {
+    padding: 4vh;
+    width: 35vh;
+    height: 48vh;
+    border-radius: 9vh;
+    margin-left: 15vh;
+    margin-top: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    flex-wrap: wrap;
+}
+.main-bottom-text {
+    margin-top: 40vh;
+}
+
+#green-code {
+    color: #6aab73;
+}
+#blue-code {
+    color: #56a8f5;
+}
+#orange-code {
+    color: #cf8e6d;
+}
+#magenta-code {
+    color: #c47cba;
+}
+#white-code {
+    color: white;
+}
+#gray-code {
+    color: gray;
+}
+#darkgray-code {
+    color: darkslategrey;
+}
+
+#intellij {
+    background: -webkit-linear-gradient(129deg, #101fe4, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#pycharm {
+    background: -webkit-linear-gradient(129deg, #10e4cc, #97ff00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#vscode {
+    color: #1283d1;
+}
+#vs {
+    color: #a478db;
+}
+
+#gradle {
+    color: #044c5c;
+}
+
+#less-small-gap {
+    margin-left: 4vh;
+}
+
+#small-gap {
+    margin-left: 2vh;
+}
+
+.long-textfield {
+    width: 90vh;
+}
+#half-page-textfield {
+    width: 63vh;
+}
+
+
+#main-text {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: white;
+    text-align: center;
+    height: 10vh;
+    margin-bottom: 15vh;
+}
+#main-text-left {
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: white;
+    height: 10vh;
+    margin-bottom: 15vh;
+}
+#main-text headers {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+#kotlin-logo {
+    height: 3vh;
+}
+#android-logo {
+    height: 3.5vh;
+}
+#ktor-logo {
+    height: 5vh;
+}
+.white-to-black-icons {
+    fill: white;
+}
+.black-to-white-icons {
+    fill: black;
+}
+ul {
+    text-decoration: none;
+    list-style-type: none;
+}
+li {
+    text-decoration: none;
+    list-style-type: none;
+    margin-left: 0.5vh;
+    margin-right: 0.5vh;
+}
+a:link { 
+    text-decoration: none;
+    color: white; 
+}
+a:visited {
+     text-decoration: none;
+     color: white;
+}
+a:hover { 
+    text-decoration: none; 
+    color: white;
+}
+a:active { 
+    text-decoration: none; 
+    color: white;
+}
