@@ -36,7 +36,6 @@ function stuff(){
         document.getElementById("knowledge").style.width = null;
         document.getElementById("main-bottom-text-r").style.marginTop = "30rem";
 
-
         document.getElementById("github").style.width = "32";
         document.getElementById("github").style.height = "32"; //height="32" width="32"
 
