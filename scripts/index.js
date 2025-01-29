@@ -4,7 +4,6 @@ function onLoad(){
 }
 
 function onResize(){
-
     stuff()
     console.log( getWindowWidth())
 }
