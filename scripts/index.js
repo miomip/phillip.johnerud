@@ -19,14 +19,11 @@ function stuff(){
         document.getElementById("sleepy-time").style.width = "30rem";
         document.getElementById("main-bottom-text-r").style.marginTop = "0rem";
 
-        document.getElementById("github").style.width = "50";
-        document.getElementById("github").style.height = "50"; //height="32" width="32"
+        document.getElementById("github").style.height = "50px"; //height="32" width="32"
 
-        document.getElementById("linkedin").style.width = "60";
-        document.getElementById("linkedin").style.height = "60"; //height="40" width="40"
+        document.getElementById("linkedin").style.height = "60px"; //height="40" width="40"
 
-        document.getElementById("mail").style.width = "78";
-        document.getElementById("mail").style.height = "78"; //height="48" width="48"
+        document.getElementById("mail").style.height = "78px"; //height="48" width="48"
     }
     if ( getWindowWidth() > 1370) {
         document.getElementById("main-top-text").style.width = "20rem";
@@ -35,14 +32,11 @@ function stuff(){
         document.getElementById("knowledge").style.width = null;
         document.getElementById("main-bottom-text-r").style.marginTop = "30rem";
 
-        document.getElementById("github").style.width = "32";
-        document.getElementById("github").style.height = "32"; //height="32" width="32"
+        document.getElementById("github").style.height = "32px"; //height="32" width="32"
 
-        document.getElementById("linkedin").style.width = "40";
-        document.getElementById("linkedin").style.height = "40"; //height="40" width="40"
+        document.getElementById("linkedin").style.height = "40px"; //height="40" width="40"
 
-        document.getElementById("mail").style.width = "48";
-        document.getElementById("mail").style.height = "48"; //height="48" width="48"
+        document.getElementById("mail").style.height = "48px"; //height="48" width="48"
     }
 }
 
@@ -68,13 +62,4 @@ function getWindowWidth(){
 
 function getWindowHeight(){
     return window.innerHeight;
-}
-
-function getCSSVariable(name, r) {
-    const rs = getComputedStyle(r);
-    return rs.getPropertyValue(name);
-}
-
-function setCSSVariable(name, color, r) {
-    r.style.setProperty(name, color)
 }

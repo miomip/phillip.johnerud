@@ -99,6 +99,17 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+#github {
+    height: 32px;
+}
+
+#linkedin {
+    height: 40px;
+}
+#mail {
+    height: 48px;
+}
+
 .main-text-field {
     padding: 2.4rem;
     width: 20rem; /*35vh*/
