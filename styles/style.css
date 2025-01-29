@@ -1,4 +1,4 @@
-html {
+:root {
     background-color: black;
     height: 1px;
     -ms-overflow-style: none;  /* IE and Edge */
@@ -8,7 +8,7 @@ html {
     background-size: 500vh;
 }
 
-html::-webkit-scrollbar {
+:root::-webkit-scrollbar {
     display: none;
 }
 
@@ -150,6 +150,7 @@ body {
     font-size: 1.5em;
     color: white;
     text-align: center;
+    margin-bottom: 30%;
     height: 10rem;
 }
 .main-text-left {
