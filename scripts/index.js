@@ -13,7 +13,11 @@ function stuff(){
     document.documentElement.style.height = `${getWindowHeight()}px`;
     document.getElementById("header-text").innerHTML = `Phillip Johnerud - ${getWindowWidth()}px`;
 
-    if ( getWindowWidth() < 1370) {
+    if (getWindowWidth() < 715) {
+        document.getElementById("main-bottom-text-r").style.marginTop = "0rem";
+        document.getElementById("knowledge").style.width = "25rem";
+    }
+    if ( getWindowWidth() < 1370 && getWindowWidth() > 715) {
         document.getElementById("main-top-text").style.width = "40rem";
         document.getElementById("knowledge").style.width = "40rem";
         document.getElementById("sleepy-time").style.width = "30rem";
