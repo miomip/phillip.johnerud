@@ -1,23 +1,10 @@
+import '@material/web/all.js';
+import {styles as typescaleStyles} from '@material/web/typography/md-typescale-styles.js';
 
-function somethingChange(){
-    let x = getById("blue-code");
-    let y = getById("green-code");
-    let f = getById("orange-code");
-    let g = getById("magenta-code");
-    x.id = "white-code";
-    y.id = "white-code";
-    f.id = "white-code";
-    g.id = "white-code";
-}
 
-function getById(text){
-    return document.getElementById(text);
-}
+document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
 
-function getWindowWidth(){
-    return window.innerWidth;
-}
+const aboutAnchor = document.body.querySelector('#about-anchor');
+const aboutMenu = document.body.querySelector('#about-menu');
 
-function getWindowHeight(){
-    return window.innerHeight;
-}
+aboutAnchor.addEventListener('click', () => { aboutMenu.open = !aboutMenu.open; });

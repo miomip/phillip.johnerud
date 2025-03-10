@@ -1,0 +1,16 @@
+{
+  "short_name": "PJ",
+  "name": "Phillip Johnerud",
+  "description": "Hello, I'm Phillip Johnerud.",
+  "icons": [
+    {
+      "src": "img/icon.svg",
+      "size": "144x105",
+      "type": "image"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#196eb3",
+  "background_color": "#060e2d"
+}

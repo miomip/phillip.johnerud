@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+#box-1 {
+    width: 70%; height: 20rem;
+    border-radius: 15px;
+}
+
+
+column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+box {
+    position: relative;
+    display: flex;
+    background-color: inherit;
+    border-radius: 5px;
+}
+
+
+sm-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex:1;
+}
+
+sm-headtext {
+    font-size: xxx-large;
+}
+
+body {
+    width: inherit;
+    height: 400vh;
+    margin-top: 0;;
+}
+:root {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    --md-menu-item-selected-container-color:system-ui;
+    scrollbar-width: none;
+    overflow-x: hidden;
+}
+
+md-icon {
+    color:white;
+    font-size: 1.8rem;
+}
+
+md-menu-item {
+    border-radius: 10px;
+}
+
+md-menu-item div a {
+    color: black;
+    text-decoration: none;
+}
+
+#logo {
+    --md-icon-size: 3rem;
+}
+
+.contact {
+    --md-icon-size: 3rem;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+#logo-text {
+    font-family: "Caudex", serif;
+    font-weight: bold;
+    background-image: linear-gradient(100deg, #1a9dbd, rgba(115, 2, 121, 0.91) 80%);
+    background-clip: text;
+    color: transparent;
+    font-size: x-large;
+    margin: 0;
+}
+
+/*Classes*/
+.compact {}
+.medium {}
+.expanded {}
+.large {}
+.extra-large {}
+.logo-hide {}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 16px);
+}
+
+
+header {
+    z-index: 1;
+    display: flex;
+    width: calc(100% - 16px);
+    height: 7rem;
+    margin-top: 0;
+}
+
+
+@media (max-width: 450px) {
+    #logo-text, .expanded, .large, .extra-large {
+        display: none;
+    }
+    box {
+        width: 90vw !important;
+    }
+}
+
+/*Medium*/
+@media (min-width: 451px) and (max-width: 629px) {
+    #logo-text, .expanded, .large, .extra-large {
+        display: none;
+        flex: 0;
+    }
+    box {
+        width: 90vw !important;
+    }
+}
+
+/*Expanded*/
+@media (min-width: 630px) and (max-width: 899px) {
+    .compact, .medium, #logo-text, .expanded, .large, .extra-large {
+        display: none;
+        flex: 0;
+    }
+    box {
+        width: 90vw !important;
+    }
+}
+
+/*Large*/
+@media (min-width: 900px) and (max-width: 1199px) {
+    .compact, #logo-text, .medium {
+        display: none;
+    }
+}
+
+/*Extra large*/
+@media (min-width: 1199px){
+    .compact, .medium {
+        display: none;
+    }
+    body {
+        height: 300vh;
+    }
+}
+
+@media (max-width: 1423px){
+    .easter {
+        display: none;
+    }
+}
+
+@media (min-width: 1423px){
+    .not-easter {
+        display: none;
+    }
+}
+
+.main-text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: white;
+    text-align: center;
+    margin-bottom: 30%;
+    height: 6rem;
+}
+.main-text .headers {
+    font-weight: bolder;
+    font-size: xx-large;
+}
+
+.main-text-left {
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: x-large;
+    color: white;
+    height: 10rem;
+}
+
+
+#kotlin-logo {
+    height: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#android-logo {
+    height: 2.25rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+#ktor-logo {
+    height: 3rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.python-logo {
+    height: 4rem;
+    margin-left: .5rem;
+    margin-right: 1rem;
+}
+
+.green-code {
+    color: #6aab73;
+}
+.blue-code {
+    color: #56a8f5;
+}
+.orange-code {
+    color: #cf8e6d;
+}
+.magenta-code {
+    color: #c47cba;
+}
+.white-code {
+    color: white;
+}
+.gray-code {
+    color: gray;
+}
+.darkgray-code {
+    color: darkslategrey;
+}
+#intellij {
+    background: linear-gradient(120deg, #087CFA, #FE2857 70%);
+    background-clip: text;
+    color: transparent;
+}
+#pycharm {
+    background: linear-gradient(129deg, #FCF84A, #3DEA62);
+    background-clip: text;
+    color: transparent;
+}
+#fleet {
+    background: linear-gradient(120deg, #AF1DF5, #07C3F2 70%);
+    background-clip: text;
+    color: transparent;
+}
+#webstorm {
+    background: linear-gradient(-130deg, #FCF84A, #07C3F2);
+    background-clip: text;
+    color: transparent;
+}
+#vscode {
+    color: #1283d1;
+}
+#vs {
+    color: #a478db;
+}
+#gradle {
+    color: #044c5c;
+}
