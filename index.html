@@ -20,7 +20,10 @@
   <meta name="theme-color" content="#fafafa">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Stylesheet and Material design-->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  
+</head>
+  <body>
   <script type="importmap">
     {
       "imports": {
@@ -28,15 +31,11 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="styles/styles.css">
-  
-</head>
-  <body>
     <header aria-label="Header">
       <sm-section style="justify-content: space-around; align-items: end;">
         <column>
           <row style="align-content: center; align-items: center; justify-content: end; gap: 3%;">
-            <md-icon id="logo"><img src="img/silent_media_logo.svg" alt="" id="logo"></md-icon>
+            <md-icon id="logo"><img src="img/silent_media_logo.svg?format=webp" alt="" id="logo"></md-icon>
             <p id="logo-text" style="text-align: end;">Phillip Johnerud</p>
           </row>
         </column>
@@ -45,12 +44,12 @@
         <column class="expanded large extra-large"></column>
         <column>
           <row style="align-content: start;" class="easter">
-            <a href="https://github.com/miomip"><md-icon-button><md-icon class="contact"><img src="img/github.svg" alt="Github" class="contact"></md-icon></md-icon-button></a>
+            <a href="https://github.com/miomip"><md-icon-button><md-icon class="contact"><img src="img/github.svg?format=webp" alt="Github" class="contact"></md-icon></md-icon-button></a>
             <a href="https://linkedin.com/in/phillip-johnerud"><md-icon-button onclick=""><md-icon class="contact"><img src="img/linkedin.svg" alt="Linkedin" class="contact"></md-icon></md-icon-button></a>
             <a href="https://mail.google.com/mail/u/0/?fs=1&to=phillip.johnerud@gmail.com&su=&body=Hello,%20Phillip%20Johnerud%2e%0a%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0a%0a%0a%0aFrom%20%E2%94%80%20Reminder%2e%20Don%27t%20forget%E2%94%80&tf=cm"><md-icon-button><md-icon>mail</md-icon></md-icon-button></a>
           </row>
           <row style="align-content: center;" class="not-easter">
-            <md-icon-button id="about-anchor"><md-icon>menu</md-icon></md-icon-button>
+            <md-icon-button id="about-anchor" alt="Contact menu"><md-icon>menu</md-icon></md-icon-button>
             <md-menu id="about-menu" anchor="about-anchor" positioning="popover">
               <md-menu-item>
                 <div slot="headline">
@@ -72,7 +71,7 @@
         </column>
       </sm-section>
     </header>
-    <column style="width:calc(100% - 16px);">
+    <column style="width:calc(100% - 16px);" aria-label="Main section">
     <main style="width: 100%; justify-content: center; align-items: center; align-content: center; height: inherit; margin-top: 15rem;">
       <sm-section style="justify-content: center; align-items: center; width:calc(100% - 16px);">
         <row style="justify-content: center; align-content: center;">
@@ -94,14 +93,12 @@
           <box style="width: 80%; height: 30rem; background-color: rgba(0, 0, 0, 0.2); border-radius: 80px; justify-content: center; align-items: center;">
             <column style="gap: 1rem;">
             <row style="align-content: center; align-items: center; justify-content: center; gap: 3%;">
-                <img src="/img/Kotlin_logo.svg" alt="Kotlin Logo" id="kotlin-logo">
-                <img src="/img/android.png" alt="android logo" id="android-logo">
-                <img src="/img/ktor.svg" alt="ktor logo" id="ktor-logo">
+                <img src="/img/Kotlin_logo.svg?format=webp" alt="The Kotlin logo. It's here because it's the programming language I use." id="kotlin-logo">
+                <img src="/img/android.png?format=webp" alt="The Android logo. I develop for Android." id="android-logo" class="when-mobile">
             </row>
             <row style="align-content: center; align-items: center; justify-content: center; gap: 3%;">
-                <img src="/img/python.png" alt="python logo" class="python-logo">
-                <img src="/img/pygame.png" alt="pygame logo" class="python-logo">
-                <img src="/img/git.png" alt="git logo" class="python-logo">
+                <img src="/img/python.png?format=webp" alt="The Python logo. I know and can use Python." class="python-logo">
+                <img src="/img/git.png?format=webp" alt="The Git logo. Git and Github is something I use regularly" class="python-logo when-mobile">
             </row>
             </column>
           </box>
@@ -211,5 +208,6 @@
     </column>
 
     <script type="module" src="scripts/index.js"></script>
+
   </body>
 </html>

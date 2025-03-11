@@ -93,7 +93,9 @@ md-menu-item div a {
 .large {}
 .extra-large {}
 .logo-hide {}
-
+.when-mobile {
+    margin-top: 2rem;
+}
 
 main {
     display: flex;
@@ -113,7 +115,7 @@ header {
 
 @media (max-width: 450px) {
     #logo-text, .expanded, .large, .extra-large {
-        display: none;
+        display: none; !important;
     }
     box {
         width: 90vw !important;
@@ -123,7 +125,7 @@ header {
 /*Medium*/
 @media (min-width: 451px) and (max-width: 629px) {
     #logo-text, .expanded, .large, .extra-large {
-        display: none;
+        display: none; !important;
         flex: 0;
     }
     box {
@@ -134,7 +136,7 @@ header {
 /*Expanded*/
 @media (min-width: 630px) and (max-width: 899px) {
     .compact, .medium, #logo-text, .expanded, .large, .extra-large {
-        display: none;
+        display: none; !important;
         flex: 0;
     }
     box {
@@ -145,14 +147,14 @@ header {
 /*Large*/
 @media (min-width: 900px) and (max-width: 1199px) {
     .compact, #logo-text, .medium {
-        display: none;
+        display: none; !important;
     }
 }
 
 /*Extra large*/
 @media (min-width: 1199px){
     .compact, .medium {
-        display: none;
+        display: none; !important;
     }
     body {
         height: 300vh;
