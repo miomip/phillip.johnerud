@@ -14,13 +14,13 @@
   <meta property="og:site_name" content="Phillip Johnerud">
 
   <link rel="manifest" href="manifest.json" crossorigin="use-credentials"/>
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
   <link rel="icon" href="img/silent_media_logo.svg" sizes="any">
   <link rel="apple-touch-icon" href="img/silent_media_logo.svg" aria-label="Default">
   <meta name="theme-color" content="#fafafa">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--Stylesheet and Material design-->
   <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap" rel="stylesheet"/>
 
 </head>
   <body>
@@ -30,6 +30,9 @@
         "@material/web/": "https://esm.run/@material/web/"
       }
     }
+  </script>
+  <script type="module">
+    import '@material/web/common.js';
   </script>
     <header aria-label="Header">
       <sm-section style="justify-content: space-around; align-items: end;">
@@ -44,25 +47,25 @@
         <column class="expanded large extra-large"></column>
         <column>
           <row style="align-content: start;" class="easter">
-            <a href="https://github.com/miomip"><md-icon-button><md-icon class="contact"><img src="img/github.svg?format=webp" alt="Github" class="contact"></md-icon></md-icon-button></a>
-            <a href="https://linkedin.com/in/phillip-johnerud"><md-icon-button onclick=""><md-icon class="contact"><img src="img/linkedin.svg" alt="Linkedin" class="contact"></md-icon></md-icon-button></a>
-            <a href="https://mail.google.com/mail/u/0/?fs=1&to=phillip.johnerud@gmail.com&su=&body=Hello,%20Phillip%20Johnerud%2e%0a%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0a%0a%0a%0aFrom%20%E2%94%80%20Reminder%2e%20Don%27t%20forget%E2%94%80&tf=cm"><md-icon-button><md-icon>mail</md-icon></md-icon-button></a>
+            <a href="https://github.com/miomip" aria-label="Link to my Github Account"><md-icon-button><md-icon class="contact"><img src="img/github.svg?format=webp" alt="Github Account" class="contact"></md-icon></md-icon-button></a>
+            <a href="https://linkedin.com/in/phillip-johnerud" aria-label="Link to my Linkedin Account"><md-icon-button onclick=""><md-icon class="contact"><img src="img/linkedin.svg" alt="Linkedin Account" class="contact"></md-icon></md-icon-button></a>
+            <a href="https://mail.google.com/mail/u/0/?fs=1&to=phillip.johnerud@gmail.com&su=&body=Hello,%20Phillip%20Johnerud%2e%0a%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0a%0a%0a%0aFrom%20%E2%94%80%20Reminder%2e%20Don%27t%20forget%E2%94%80&tf=cm" aria-label="Link to my Gmail"><md-icon-button><md-icon>mail</md-icon></md-icon-button></a>
           </row>
           <row style="align-content: center;" class="not-easter">
-            <md-icon-button id="about-anchor" alt="Contact menu"><md-icon>menu</md-icon></md-icon-button>
+            <md-icon-button id="about-anchor" alt="Contact menu" aria-label="Contact menu"><md-icon>menu</md-icon></md-icon-button>
             <md-menu id="about-menu" anchor="about-anchor" positioning="popover">
               <md-menu-item>
-                <div slot="headline">
+                <div slot="headline" aria-label="Link to my GitHub account">
                   <a href="https://github.com/miomip">Github</a>
                 </div>
               </md-menu-item>
               <md-menu-item>
-                <div slot="headline">
+                <div slot="headline" aria-label="Link to my Linkedin account">
                   <a href="https://linkedin.com/in/phillip-johnerud">Linkedin</a>
                 </div>
               </md-menu-item>
               <md-menu-item>
-                <div slot="headline">
+                <div slot="headline" aria-label="Link to my Gmail">
                   <a href="https://mail.google.com/mail/u/0/?fs=1&to=phillip.johnerud@gmail.com&su=&body=Hello,%20Phillip%20Johnerud%2e%0a%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%E2%94%80%0a%0a%0a%0aFrom%20%E2%94%80%20Reminder%2e%20Don%27t%20forget%E2%94%80&tf=cm">Mail</a>
                 </div>
               </md-menu-item>
@@ -81,11 +84,11 @@
               <br> <br>
               Student at Hønefoss VGS
               <br> <br>
-              Leader of the class project
-              <br> <br>
+              I'm a server dev using Kotlin and Go
+              <br><br>
               Started programming 7 years ago
               <br> <br>
-              Living in Norway
+              Currently living in Norway
             </p>
           </box>
         </row>
@@ -93,12 +96,12 @@
           <box style="width: 80%; height: 30rem; background-color: rgba(0, 0, 0, 0.2); border-radius: 80px; justify-content: center; align-items: center;">
             <column style="gap: 1rem;">
             <row style="align-content: center; align-items: center; justify-content: center; gap: 3%;">
-                <img src="img/Kotlin_logo.svg" alt="The Kotlin logo. It's here because it's the programming language I use." id="kotlin-logo">
-                <img src="img/android.png?format=webp" alt="The Android logo. I develop for Android." id="android-logo" class="when-mobile">
+                <img src="img/Kotlin_logo.svg" loading="lazy" alt="The Kotlin logo. It's here because it's the programming language I use." id="kotlin-logo">
+                <img src="img/android.png?format=webp" loading="lazy" alt="The Android logo. I develop for Android." id="android-logo" class="when-mobile">
             </row>
             <row style="align-content: center; align-items: center; justify-content: center; gap: 3%;">
-                <img src="img/python.png?format=webp" alt="The Python logo. I know and can use Python." class="python-logo">
-                <img src="img/git.png?format=webp" alt="The Git logo. Git and Github is something I use regularly" class="python-logo when-mobile">
+                <img src="img/python.png?format=webp" loading="lazy" alt="The Python logo. I know and can use Python." class="python-logo">
+                <img src="img/git.png?format=webp" loading="lazy" alt="The Git logo. Git and Github is something I use regularly" class="python-logo when-mobile">
             </row>
             </column>
           </box>
@@ -110,20 +113,25 @@
               <column style="justify-content: center; align-items: center;">
                 <box style="background-color: rgba(0, 0, 0, 0.2); width: 40rem; height: 30rem; border-radius: 80px; justify-content: center; align-items: center;">
                   <p class="main-text main-text-l">
-                    <span class="headers"> Why me?</span> <br>
+                    <span class="headers"> Why me?</span> <br> <br>
                     I love working on projects, <br>
                     eager to learn new things, <br>
-                    and love working with people
+                    love working with people, <br>
+                    specializing in tech art <br>
+                    and optimizations, <br>
+                    try until it works
                   </p>
                 </box>
               </column>
               <column style="justify-content: center; align-items: center;">
                 <box style="background-color: rgba(0, 0, 0, 0.2); width: 40rem; height: 30rem; border-radius: 80px; justify-content: center; align-items: center;">
                   <p class="main-text-l main-text">
-                    <span class="headers">This is why not</span> <br>
+                    <span class="headers">This is why not</span> <br> <br>
                     I overcomplicate things, <br>
+                    terrible sleep cycle, <br>
                     try things for fun, <br>
-                    bad sleep cycle
+                    try until it works, <br>
+                    I'm a introvert
                   </p>
                 </box>
               </column>
@@ -174,7 +182,7 @@
             </box>
           </column>
           <column style="justify-content: center; align-items: center;" class="easter">
-            <box style="background-color: rgba(0, 0, 0, 0.2); width: 20rem; height: 30rem; border-radius: 80px; justify-content: center; align-items: center;">
+            <box style="background-color: rgba(0, 0, 0, 0.2); width: 20rem; height: 30rem; border-radius: 80px; justify-content: center; align-items: center;" aria-label="Ascii Art of sleep">
               <p class="main-text-left">
                 <span class="darkgray-code">Z</span>
                 <br> &emsp; z
@@ -208,6 +216,5 @@
     </column>
 
     <script type="module" src="scripts/index.js"></script>
-
   </body>
 </html>
