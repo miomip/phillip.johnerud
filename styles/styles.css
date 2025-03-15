@@ -41,13 +41,18 @@ body {
     margin-top: 0;;
 }
 :root {
-    background-image: url("../img/background.png?format=webp");
+    background-image: url("../img/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: black;
     --md-menu-item-selected-container-color:system-ui;
     scrollbar-width: none;
     overflow-x: hidden;
+
+    --green-code: #6aab73;
+    --blue-code: #56a8f5;
+    --orange-code: #cf8e6d;
+    --magenta-code: #c47cba;
 }
 
 md-icon {
@@ -215,16 +220,16 @@ header {
 }
 
 .green-code {
-    color: #6aab73;
+    color: var(--green-code);
 }
 .blue-code {
-    color: #56a8f5;
+    color: var(--blue-code);
 }
 .orange-code {
-    color: #cf8e6d;
+    color: var(--orange-code);
 }
 .magenta-code {
-    color: #c47cba;
+    color: var(--magenta-code);
 }
 .white-code {
     color: white;
