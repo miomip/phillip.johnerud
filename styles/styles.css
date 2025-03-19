@@ -71,12 +71,26 @@ md-menu-item div a {
 
 #logo {
     --md-icon-size: 3rem;
+    transition: transform .4s;
+}
+
+#logo:hover {
+    transform: translate(0px, -2.5px);
+    transition: transform .4s;
 }
 
 .contact {
     --md-icon-size: 3rem;
     height: 1.8rem;
     width: 1.8rem;
+}
+.easter a {
+    transition: transform .4s;
+}
+
+.easter a:hover {
+    transform: translate(0px, -3px);
+    transition: transform .3s;
 }
 
 #logo-text {
@@ -197,26 +211,41 @@ header {
     height: 10rem;
 }
 
+#change-color:hover {
+    font-weight: bolder;
+}
 
 #kotlin-logo {
     height: 2rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    transition: transform .4s;
 }
+
+#kotlin-logo:hover {
+    transform: translate(0px, -5px);
+    transition: transform .4s;
+}
+
 #android-logo {
     height: 2.25rem;
     margin-left: 1rem;
     margin-right: 1rem;
+    transition: transform .4s;
 }
-#ktor-logo {
-    height: 3rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+#android-logo:hover {
+    transform: translate(0px, -5px);
+    transition: transform .4s;
 }
 .python-logo {
     height: 4rem;
     margin-left: .5rem;
     margin-right: 1rem;
+    transition: transform .4s;
+}
+.python-logo:hover {
+    transform: translate(0px, -5px);
+    transition: transform .4s;
 }
 
 .green-code {
